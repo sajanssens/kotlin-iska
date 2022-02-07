@@ -51,7 +51,7 @@ fun main() {
     val pair = 0 to Person()
     for ((i, p) in mapOf(pair, 1 to jj, 2 to bj, 3 to uk)) {
         val (n, a) = p
-        println("Person (${i}) ${n} is ${a} years old.")
+        println("Person ($i) $n is $a years old.")
     }
 
     // TODO
