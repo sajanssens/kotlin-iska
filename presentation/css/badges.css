@@ -1,0 +1,57 @@
+.reveal pre.lang-html::before,
+.reveal pre.lang-css::before,
+.reveal pre.lang-scss::before,
+.reveal pre.lang-js::before,
+.reveal pre.input code::before,
+.reveal pre.output code::before {
+	position: absolute;
+	color: white;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+	top: -10px;
+	border-radius: 7px;
+	right: -6px;
+}
+
+.reveal pre.lang-html::before {
+	content: " HTML ";
+	background: linear-gradient(red, rgb(201, 0, 0));
+}
+
+.reveal pre.lang-css::before {
+	content: " CSS ";
+	background: linear-gradient(#1d92ff, #004280);
+}
+
+.reveal pre.lang-scss::before {
+	content: " SCSS ";
+	background: linear-gradient(#bf4080, #831b4f);
+}
+
+.reveal pre.lang-js::before {
+	content: " JS ";
+	background: linear-gradient(rgb(0, 180, 0), rgb(0, 78, 0));
+}
+.reveal pre.input code::before,
+.reveal pre.output code::before {
+	content: " input ";
+	background: linear-gradient(darkgray, gray);
+	top: 20px;
+}
+.reveal pre.output code::before {
+	content: " compiled ";
+}
+.reveal .html::before {
+	content: url("../img/html_small.png") " ";
+}
+
+.reveal .html5::before {
+	content: url("../img/html5_small.png") " ";
+}
+
+.reveal .css::before {
+	content: url("../img/css_small.png") " ";
+}
+
+.reveal .js::before {
+	content: url("../img/javascript_small.png") " ";
+}

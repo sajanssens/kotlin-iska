@@ -1,0 +1,93 @@
+.reveal .col {
+    flex: 1 1 0;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.reveal .flex {
+    display: flex;
+}
+.reveal .flex.side-by-side > * {
+	flex: 1;
+}
+.flex.margin > *:first-child {
+	margin-right: 50px;
+}
+.flex.code > * {
+	flex: 1;
+	max-width: 50%;
+}
+/* for when result is on a slide with a CSS AND HTML block and the
+   result is shown beneath one of those blocks */
+.reveal .flex * .result {
+	text-align: left;
+	margin-top: 50px;
+}
+/* for when result is on a slide with only a CSS OR HTML block and the
+   result is part of the flexbox */
+.reveal .flex > .result {
+	text-align: left;
+	align-self: center;
+	margin-left: 50px;
+}
+.flex.code pre:first-child {
+	margin-right: 30px;
+}
+.align-items-center {
+	align-items: center;
+}
+.reveal section .align-items-center img { /* for the agenda */
+	margin-right: 10px;
+}
+.flex.space-between {
+	justify-content: space-between;
+}
+.is-lab .flex.space-between {
+	margin-right: 40px;
+}
+
+.reveal .center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.reveal table {
+    font-size: 0.8em;
+}
+.reveal td {
+    vertical-align: top;
+}
+
+.reveal .flex.code > div > pre { /* slide CSS multiple selectors */
+    height: initial;
+}
+
+.agenda {
+    column-count: 2;
+    list-style-position: inside;
+}
+
+.css-framework-with-logo, .css-preprocessor-with-logo {
+	display: flex;
+	align-items: center;
+}
+.css-framework-with-logo img {
+	max-height: 60px;
+	max-width: 60px;
+}
+.css-preprocessor-with-logo img {
+	max-height: 100px;
+	max-width: 100px;
+}
+.css-framework-with-logo p, .css-preprocessor-with-logo p {
+	margin-left: 20px;
+}
+
+.is-lab .flex img:first-child {
+	margin-right: 10px;
+}
+
+.img-center > p {	
+	text-align: center;
+}
