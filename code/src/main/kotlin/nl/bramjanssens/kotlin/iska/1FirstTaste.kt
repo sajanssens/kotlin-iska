@@ -19,6 +19,11 @@ val persons = listOf(
     Person("Bob", 29)
 )
 
+// TODO:
+//  - use Java from Kotlin
+//  - and vice versa
+val jp = JavaPerson()
+
 // TODO: first class function
 fun main() {
 
