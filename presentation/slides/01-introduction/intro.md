@@ -23,25 +23,22 @@ Jan-Jelle Kester
 ### Topics
 
 1. Introduction Kotlin
+   1. Background                      <!-- .element: class="fragment" -->
+   2. Main traits                     <!-- .element: class="fragment" -->
+   3. First taste                     <!-- .element: class="fragment" -->
+2. Features                           <!-- .element: class="fragment" -->
+   1. Some misc language features     <!-- .element: class="fragment" -->
+   2. Generics                        <!-- .element: class="fragment" -->
+       - Type erasure?
+       - Inline functions!
+   3. Lambda's                        <!-- .element: class="fragment" -->
+   4. DSL's                           <!-- .element: class="fragment" -->
+   5. Sequences                       <!-- .element: class="fragment" -->
+   6. Coroutines                      <!-- .element: class="fragment" -->
 
-- Background
-- Main traits
-- First taste
+Have fun!                             <!-- .element: class="fragment" -->
 
-2. Features
-
-- Some slick language features
-- Generics
-    - Type erasure?
-    - Inline functions!
-- Sequences
-- Coroutines
-- Lambda's
-- DSL's
-
-https://github.com/sajanssens/kotlin-iska
-
-Have fun!
+<!-- .slide: class="is-module" -->
 
 ---
 

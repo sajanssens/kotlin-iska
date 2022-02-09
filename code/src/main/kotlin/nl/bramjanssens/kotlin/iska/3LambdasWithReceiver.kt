@@ -12,13 +12,16 @@ fun process(action: (Int) -> Int) {
 }
 
 fun main() {
+    // Call higher order function:
     process(lambda)
 
+    // Lambda syntax:
     process({ x -> x / 2 })  // or,
     process() { x -> x / 2 } // or,
     process { x -> x / 2 }   // or,
     process { it / 2 }
 
+    // Lambda with receiver:
     val reversedAndCapped = buildString { sb ->
         sb.append("snessnaj marb")
         sb.reverse()
@@ -33,7 +36,7 @@ fun main() {
     }
     println(reversedAndCapped2)
 
-    val reversedAndCapped3 = buildStringImpr {
+    val reversedAndCapped3 = buildStringBetter {
         append("ytinummoc avaj")
         reverse()
         capEachWord()
@@ -63,7 +66,7 @@ fun buildString(body: (StringBuilder) -> Unit): String {
     return sb.toString()
 }
 
-fun buildStringImpr(body: StringBuilder.() -> Unit): String {
+fun buildStringBetter(body: StringBuilder.() -> Unit): String {
     val sb = StringBuilder()
     body(sb) // call lambda WITH sb as param
     return sb.toString()
