@@ -11,7 +11,7 @@ package nl.bramjanssens.kotlin.iska
 //  - var/val
 //  - (non)nullable
 //  - optional parameter
-data class Person(var name: String = "", var age: Int? = null, private val i: Int = 0)
+data class Person(var name: String? = "", var age: Int? = null, private val i: Int = 0)
 
 // TODO: first class property
 val persons = listOf(
