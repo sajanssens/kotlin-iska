@@ -22,7 +22,9 @@ fun callIsA() {
 
 fun filterIsInstance() {
     val items = listOf("one", 2, "three")
-    println(items.filterIsInstance<String>())
+    println(items.filterIsInstance<String>().map { it.length })
+    // Note: result of filterIsInstance<String>() is also typed (List<String>), so no need for casting; it is String!
+
     // This isn't possible in Java, but filterIsInstance is defined inline with reified type parameter.
     // String is preserved in the inlined byte code. Check in decompiled byte code.
     // Only works when inlining is possible.
